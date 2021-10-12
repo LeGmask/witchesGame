@@ -1,3 +1,9 @@
+<p align="center">
+	<a href="https://codecov.io/gh/LeGmask/witchesGame" >
+		<img src="https://codecov.io/gh/LeGmask/witchesGame/branch/master/graph/badge.svg?token=AP9B10M3I2"/>
+	</a>
+</p>
+
 # witchesGame
 
 witchesGame is a Python implementation for automatically solving the brain teaser "Jeu fou de la sorcière"
