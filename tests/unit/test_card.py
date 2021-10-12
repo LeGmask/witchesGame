@@ -2,7 +2,9 @@ from src.card import *
 
 
 class TestCard:
-    card = Card(7, 8, 3, 4) # we use an attributes to avoid recreate a card instance for each test
+    card = Card(
+        7, 8, 3, 4
+    )  # we use an attributes to avoid recreate a card instance for each test
 
     def test_create_card(self):
         assert self.card.sides == [7, 8, 3, 4]
@@ -26,7 +28,7 @@ class TestCard:
 
     def test_card_getLeft(self):
         assert self.card.getLeft() == 7
-    
+
     def test_card_getUp(self):
         assert self.card.getUp() == 8
 
