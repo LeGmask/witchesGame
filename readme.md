@@ -2,6 +2,9 @@
 	<a href="https://codecov.io/gh/LeGmask/witchesGame" >
 		<img src="https://codecov.io/gh/LeGmask/witchesGame/branch/master/graph/badge.svg?token=AP9B10M3I2"/>
 	</a>
+	<a href="https://wakatime.com/badge/github/LeGmask/witchesGame">
+		<img src="https://wakatime.com/badge/github/LeGmask/witchesGame.svg" alt="wakatime">
+	</a>
 </p>
 
 # witchesGame
