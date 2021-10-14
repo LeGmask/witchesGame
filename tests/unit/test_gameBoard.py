@@ -8,7 +8,7 @@ class TestGameBoard:
     # fmt: off
     cards = [
         Card(5, 1, 2, 7), Card(7, 3, 2, 8), Card(7, 6, 2, 3),
-        Card(5, 3, 4, 8), Card(5, 1, 3, 7), Card(6, 6, 4, 1),
+        Card(5, 2, 4, 8), Card(5, 1, 3, 7), Card(6, 6, 4, 1),
         Card(8, 1, 2, 7), Card(7, 2, 3, 5), Card(6, 8, 2, 1)
     ]
     # fmt: on
@@ -77,5 +77,5 @@ class TestGameBoard:
     def test_gameBoard_toString(self):
         assert (
             self.gameBoard.toString()
-            == " 3   3   6 \n7+2 5+4 7+2\n 8   8   3\n\n 1   1   6\n5+2 5+3 6+4\n 7   7   1\n\n 1   2   8\n8+2 7+3 6+2\n 7   5   1"
+            == " 3   3   6 \n7+2 5+4 7+2\n 8   8   3\n\n 1   1   6\n5+2 5+3 6+4\n 8   7   1\n\n 1   2   8\n8+2 7+3 6+2\n 7   5   1"
         )
