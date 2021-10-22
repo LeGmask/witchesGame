@@ -23,8 +23,8 @@ class Card:
         return the corresponding value for the corresponding side
     """
 
-    def __init__(self, left, up, right, down) -> None:
-        self.sides: List[int] = [left, up, right, down]
+    def __init__(self, sides) -> None:
+        self.sides: List[int] = sides
         self.rotation_count: int = 0
 
     def toString(self) -> str:

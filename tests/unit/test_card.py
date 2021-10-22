@@ -3,7 +3,7 @@ from src.card import *
 
 class TestCard:
     card = Card(
-        7, 8, 3, 4
+        [7, 8, 3, 4]
     )  # we use an attributes to avoid recreate a card instance for each test
 
     def test_create_card(self):

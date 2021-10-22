@@ -7,9 +7,9 @@ class TestGameBoard:
     # We should disable black autoformating here, since that put the card in this way is way easier to understand actual gameboard
     # fmt: off
     cards = [
-        Card(5, 1, 2, 7), Card(7, 3, 2, 8), Card(7, 6, 2, 3),
-        Card(5, 2, 4, 8), Card(5, 1, 3, 7), Card(6, 6, 4, 1),
-        Card(8, 1, 2, 7), Card(7, 2, 3, 5), Card(6, 8, 2, 1)
+        Card([5, 1, 2, 7]), Card([7, 3, 2, 8]), Card([7, 6, 2, 3]),
+        Card([5, 2, 4, 8]), Card([5, 1, 3, 7]), Card([6, 6, 4, 1]),
+        Card([8, 1, 2, 7]), Card([7, 2, 3, 5]), Card([6, 8, 2, 1])
     ]
     # fmt: on
     cards_sides = [card.sides for card in cards]
@@ -30,9 +30,9 @@ class TestGameBoard:
         # We should disable black autoformating here, since that put the card in this way is way easier to understand actual gameboard
         # fmt: off
         assert self.gameBoard.toArray() == [
-            Card(5, 2, 4, 8).sides, Card(7, 3, 2, 8).sides, Card(7, 6, 2, 3).sides,
-            Card(5, 1, 2, 7).sides, Card(5, 1, 3, 7).sides, Card(6, 6, 4, 1).sides,
-            Card(8, 1, 2, 7).sides, Card(7, 2, 3, 5).sides, Card(6, 8, 2, 1).sides
+            Card([5, 2, 4, 8]).sides, Card([7, 3, 2, 8]).sides, Card([7, 6, 2, 3]).sides,
+            Card([5, 1, 2, 7]).sides, Card([5, 1, 3, 7]).sides, Card([6, 6, 4, 1]).sides,
+            Card([8, 1, 2, 7]).sides, Card([7, 2, 3, 5]).sides, Card([6, 8, 2, 1]).sides
         ]
         # fmt: on
 
@@ -43,9 +43,9 @@ class TestGameBoard:
         # We should disable black autoformating here, since that put the card in this way is way easier to understand actual gameboard
         # fmt: off
         assert self.gameBoard.toArray() == [
-            Card(7, 3, 2, 8).sides, Card(5, 1, 2, 7).sides, Card(7, 6, 2, 3).sides,
-            Card(5, 2, 4, 8).sides, Card(5, 1, 3, 7).sides, Card(6, 6, 4, 1).sides,
-            Card(8, 1, 2, 7).sides, Card(7, 2, 3, 5).sides, Card(6, 8, 2, 1).sides
+            Card([7, 3, 2, 8]).sides, Card([5, 1, 2, 7]).sides, Card([7, 6, 2, 3]).sides,
+            Card([5, 2, 4, 8]).sides, Card([5, 1, 3, 7]).sides, Card([6, 6, 4, 1]).sides,
+            Card([8, 1, 2, 7]).sides, Card([7, 2, 3, 5]).sides, Card([6, 8, 2, 1]).sides
         ]
         # fmt: on
 
