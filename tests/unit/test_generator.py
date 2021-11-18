@@ -26,19 +26,23 @@ class TestGenerator:
             and sum(sides.count(x) for x in set(self.BODY)) == 2
         )
 
+    def check_card_condition_unique(self, sides):
+        print(sides)
+        return len(sides) == len(set(sides))
+
     def test_card_conditional_generator(self):
         # case when allready two head:
-        sides = self.generator_card.conditional_generator([1, 2])
+        sides = self.generator_card.conditional_generator([1, 2], [3, 4], [5, 6, 7, 8])
         assert self.check_card_condition_count(sides)
         assert self.check_card_condition_position(sides)
 
         # case when allready two body:
-        sides = self.generator_card.conditional_generator([5, 7])
+        sides = self.generator_card.conditional_generator([5, 7], [1, 2, 3, 4], [6, 8])
         assert self.check_card_condition_count(sides)
         assert self.check_card_condition_position(sides)
 
         # case when allready body equal head:
-        sides = self.generator_card.conditional_generator([1, 7])
+        sides = self.generator_card.conditional_generator([1, 7], [2, 3, 4], [5, 6, 8])
         assert self.check_card_condition_count(sides)
         assert self.check_card_condition_position(sides)
 
@@ -53,3 +57,7 @@ class TestGenerator:
             sides = card.sides
             assert self.check_card_condition_count(sides)
             assert self.check_card_condition_position(sides)
+            assert self.check_card_condition_unique(sides)
+
+
+TestGenerator().test_board_new()
